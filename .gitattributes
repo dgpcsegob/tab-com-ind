@@ -1,0 +1,5 @@
+*.pmtiles filter=lfs diff=lfs merge=lfs -text
+public/data/*.pmtiles filter=lfs diff=lfs merge=lfs -text
+build/data/*.pmtiles filter=lfs diff=lfs merge=lfs -text
+public/data/perimatrales_nacional_simpl.pmtiles filter=lfs diff=lfs merge=lfs -text
+public/data/perimetrales_nacional_simpl.pmtiles filter=lfs diff=lfs merge=lfs -text
