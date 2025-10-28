@@ -16,11 +16,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          lfs: true  # Importante: descarga archivos LFS
-      
-      - name: Checkout LFS objects
-        run: git lfs pull
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,6 +30,16 @@ jobs:
         run: npm run build
         env:
           CI: false
+      
+      - name: Remove large files from build
+        run: |
+          if [ -f build/data/perimetrales_nacional_simpl.pmtiles ]; then
+            rm build/data/perimetrales_nacional_simpl.pmtiles
+            echo "✓ Removed large PMTiles file from build"
+          fi
+          if [ -d build/fichas ]; then
+            echo "✓ Fichas directory exists with $(find build/fichas -type f | wc -l) files"
+          fi
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
