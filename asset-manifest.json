@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/tab-com-ind/static/css/main.53abccae.css",
+    "main.js": "/tab-com-ind/static/js/main.7e4bbf26.js",
+    "static/js/977.7319e9e6.chunk.js": "/tab-com-ind/static/js/977.7319e9e6.chunk.js",
+    "static/js/455.1831fba5.chunk.js": "/tab-com-ind/static/js/455.1831fba5.chunk.js",
+    "static/js/453.b337644c.chunk.js": "/tab-com-ind/static/js/453.b337644c.chunk.js",
+    "index.html": "/tab-com-ind/index.html",
+    "main.53abccae.css.map": "/tab-com-ind/static/css/main.53abccae.css.map",
+    "main.7e4bbf26.js.map": "/tab-com-ind/static/js/main.7e4bbf26.js.map",
+    "977.7319e9e6.chunk.js.map": "/tab-com-ind/static/js/977.7319e9e6.chunk.js.map",
+    "455.1831fba5.chunk.js.map": "/tab-com-ind/static/js/455.1831fba5.chunk.js.map",
+    "453.b337644c.chunk.js.map": "/tab-com-ind/static/js/453.b337644c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53abccae.css",
+    "static/js/main.7e4bbf26.js"
+  ]
+}
