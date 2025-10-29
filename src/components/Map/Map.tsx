@@ -155,6 +155,8 @@ const Map: React.FC<MapProps> = ({
   const satelliteStyleUrl = `https://www.mapabase.atdt.gob.mx/style_satellite.json`;
   const minimapStyleUrl = `https://www.mapabase.atdt.gob.mx/style_white_3d_places.json`;
 
+  const pmtilesUrl = process.env.REACT_APP_PMTILES_URL || '/data/perimetrales_nacional_simpl.pmtiles';
+
   const [isSatellite, setIsSatellite] = useState(false);
   const [is3D, setIs3D] = useState(false);
   const [isMeasuring, setIsMeasuring] = useState(false);
@@ -423,7 +425,7 @@ const Map: React.FC<MapProps> = ({
     if (!map.getSource(NUCLEOS_SOURCE_ID)) {
       map.addSource(NUCLEOS_SOURCE_ID, {
         type: "vector",
-        url: "pmtiles://data/perimetrales_nacional_simpl.pmtiles",
+        url: "https://media.githubusercontent.com/media/dgpcsegob/tab-com-ind/main/public/data/perimetrales_nacional_simpl.pmtiles",
       });
     }
 
